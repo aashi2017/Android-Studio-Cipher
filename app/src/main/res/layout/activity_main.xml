@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/gradient"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:layout_width="326dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="-120dp"
+        android:layout_marginBottom="50dp"
+        android:text="Enchipher and Dechipher"
+        android:textColor="#FFFFFF"
+        android:textSize="27dp"
+        android:textStyle="bold"
+        app:fontFamily="serif-monospace" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="40dp"
+        android:layout_marginLeft="15dp"
+        android:textColor="#FFFFFF"
+        android:text="Select from the following Ciphers:"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        app:fontFamily="serif-monospace"/>
+
+    <Button
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:text="Caesar Cipher "
+        android:textColor="#FFFFFF"
+        android:background="@drawable/custom_button"
+        android:textSize="18dp"
+        android:id="@+id/caesar"/>
+    <Button
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:text="Affine Cipher  "
+        android:textColor="#FFFFFF"
+        android:background="@drawable/custom_button"
+        android:textSize="18dp"
+        android:layout_margin="15dp"
+        android:id="@+id/affine"/>
+
+    <Button
+        android:id="@+id/mInverse"
+        android:layout_width="284dp"
+        android:layout_height="50dp"
+        android:background="@drawable/custom_button"
+        android:text="Multiplicative Inverse Generation "
+        android:textColor="#FFFFFF"
+        android:textSize="18dp" />
+
+    <Button
+        android:id="@+id/rsaKey"
+        android:layout_width="181dp"
+        android:layout_height="50dp"
+        android:layout_margin="15dp"
+        android:background="@drawable/custom_button"
+        android:text="RSA Key Generation "
+        android:textColor="#FFFFFF"
+        android:textSize="18dp" />
+
+
+</LinearLayout>

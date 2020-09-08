@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Multi"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@drawable/gradient">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:includeFontPadding="true"
+        android:text="MULTIPLICATIVE INVERSE GENERATION"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="20dp"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        app:fontFamily="monospace" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+
+            android:id="@+id/marg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:background="@color/b"
+            android:hint="Enter The Message"
+            android:text="Given two integers 'a' and 'm' we find modular multiplicative inverse of 'a' under modulo 'm'. "
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            android:textSize="24sp"
+            app:fontFamily="sans-serif-condensed-light" />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+            android:background="@color/b"
+            android:text="The modular multiplicative inverse is an integer 'x' such that "
+
+            android:textColor="#FFFFFF"
+
+            android:textSize="24sp"
+            app:fontFamily="sans-serif-condensed-light" />
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+            android:background="@color/b"
+            android:text="Enter the Vlaues of a and m below!"
+
+            android:textColor="#FFFFFF"
+
+            android:textSize="22sp"
+            app:fontFamily="sans-serif-condensed-light" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="20dp"
+
+
+        android:background="@color/b">
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="a "
+            android:textSize="27sp"
+            android:textColorHint="#FFFFFF"
+            android:textColor="#FFFFFF"
+            android:id="@+id/val1"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*x ≡ 1 (mod "
+            android:textSize="27sp"
+            android:textColor="#FFFFFF"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="m"
+            android:textSize="27sp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            android:id="@+id/val2"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=")"
+            android:textSize="27sp"
+            android:textColor="#FFFFFF"/>
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+        <Button
+            android:layout_width="95dp"
+            android:layout_height="45dp"
+            android:text="Calculate"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/custom_button"
+
+            android:layout_marginTop="10dp"
+            android:id="@+id/encryptM"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:background="@color/b"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/op"/>
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="Main Menu"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/custom_button"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/mainMenuM"/>
+
+
+</LinearLayout>

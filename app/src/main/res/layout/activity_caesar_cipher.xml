@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    android:layout_gravity="center_horizontal"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:includeFontPadding="true"
+        android:text="CAESAR CIPHER"
+        android:textColor="#FFFFFF"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="40dp"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:fontFamily="monospace" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal">
+
+        <EditText
+            android:id="@+id/msg"
+            android:layout_width="219dp"
+            android:layout_height="44dp"
+            android:layout_gravity="center"
+            android:background="@color/b"
+            android:textColor="#FFFFFF"
+            android:drawableLeft="@drawable/ic_action_msg"
+            android:hint="   Enter The Message"
+
+            android:textColorHint="#FFFFFF" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="50dp"
+        android:layout_gravity="center_horizontal">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:id="@+id/key"
+            android:background="@color/b"
+            android:hint="Enter Key  "
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            android:drawableLeft="@drawable/ic_action_key"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/encryptC"
+            android:layout_width="111dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/custom_button"
+            android:text="Encrypt"
+            android:textColor="#FFFFFF" />
+        <Button
+            android:layout_width="111dp"
+            android:layout_height="50dp"
+            android:text="Decrypt"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/custom_button"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="30dp"
+            android:id="@+id/decryptC"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/res"
+        android:layout_width="343dp"
+
+        android:layout_height="125dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:background="@color/b"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        />
+
+    <Button
+        android:id="@+id/mainMenu"
+        android:layout_width="166dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/custom_button"
+        android:text="Main Menu"
+        android:textColor="#FFFFFF" />
+</LinearLayout>
